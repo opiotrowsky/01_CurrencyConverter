@@ -18,6 +18,9 @@ public:
 
     double getValue() { return value_; }
     std::string getCurrency() { return currency_; }
-    
+
+    double setValue(double value) { return value_ = value; }
+    std::string setCurrency(std::string currency) { return currency_ = currency; }
+
     void changeCurrency(std::string currency);
 };
