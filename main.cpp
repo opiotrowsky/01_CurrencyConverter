@@ -1,13 +1,11 @@
 #include "currencyConverter.hpp"
 
 int main() {
-    Currency currency;
     double val;
     std::string curr, newcurr;
     std::cout << "Hello customer. Please, tell me first how much money do you have and what currency it is.\n";
     std::cin >> val >> curr;
-    currency.setValue(val);
-    currency.setCurrency(curr);
+    Currency currency(val, curr);
     std::cout << "Thank you. Now please tell me which currency do you want to get.\n";
     std::cin >> newcurr;
     currency.changeCurrency(newcurr);
